@@ -1,0 +1,22 @@
+@forward './styles/fonts.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2B283A;
+}
+
+html {
+  font-size: 10.24px;
+}
+
+body {
+  height: 100vh;
+}                      
+
+img {
+  max-width: 100%;
+  display: block;
+}

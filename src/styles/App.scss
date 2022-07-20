@@ -1,0 +1,105 @@
+@use '../index.scss' as *;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.562em;
+  background-color: $color--conrtast;
+  
+  h3 {
+    color: #fff;
+  }
+}
+
+.header--icon {
+  width: 24px;
+  margin-right: 7px;
+}
+
+/* ---------- CARDS ---------- */
+.cards--container {
+  margin: 0 auto;
+  width: 85.5%;
+  max-width: 550px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin-bottom: 2em;
+}
+
+.card--img {
+  max-width: 125px;
+  img {
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1.5em;
+
+  .card--location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    
+    .card--icon {
+      display: inline-block;
+      width: 1.1em;
+    }
+  
+    p {
+      letter-spacing: 0.17em;
+      font-weight: $fw--light;
+      text-transform: uppercase;
+      margin-right: 1.05em;
+    }
+
+    a {
+      color:#918E9B;
+    }
+  }
+
+  .card--title {
+    margin-bottom: 0.7em;
+  }
+
+  .card--date {
+    font-weight: $fw--bold;
+    margin-bottom: 0.6em;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  padding: 1.562em;
+  background-color: $color--conrtast; 
+  text-align: center; 
+
+  a {
+    color:#f6f6f6;
+  }
+}
